@@ -4,6 +4,6 @@ export class Post {
       public description: string,
       public nbLike: number,
       public nbDislike: number,
-      public postDate= new Date().toUTCString()
+      public postDate= new Date()
     ) {}
   }

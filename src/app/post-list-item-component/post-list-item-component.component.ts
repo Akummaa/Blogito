@@ -11,7 +11,7 @@ export class PostListItemComponentComponent implements OnInit {
   @Input() postDescription: string;
   @Input() postLike: number;
   @Input() postDisLike: number;
-  @Input() postDate: string;
+  @Input() postDate: Date;
   reputation: boolean;
 
   constructor() { }

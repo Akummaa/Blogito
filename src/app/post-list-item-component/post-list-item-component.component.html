@@ -2,7 +2,7 @@
 'list-group-item-success':  reputation,
 'list-group-item-danger': !reputation}">
 	<div>
-		<h4>{{ postName }}</h4>  {{ postDate }}
+		<h4>{{ postName }}</h4>   <p>Mis à jour : {{ postDate | date: 'dd/MM/yyyy hh:mm'}}</p>
   	</div>
  	<div>
  		{{ postDescription }}
