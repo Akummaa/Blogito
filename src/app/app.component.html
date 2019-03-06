@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Mes postes</h2>
+      <p>Mis à jour : {{ lastUpdate | async | date: 'yMMMMEEEEd' | uppercase }}</p>
+      <ul class="list-group">
+       <app-post-list-component [postItems]="publications" ></app-post-list-component>
+      </ul>      
+    </div>
+  </div>
+</div>
