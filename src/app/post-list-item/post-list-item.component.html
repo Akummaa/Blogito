@@ -1,0 +1,19 @@
+<li [ngClass]="{'list-group-item': true,
+'list-group-item-success':  balance > 0,
+'list-group-item-danger': balance < 0}">
+	 <div class="row">
+		
+		<h2 style="margin-left: 10px;" > {{ postName }} </h2>
+	
+		<em><span style="position: absolute; top: 38px; right: 20px;"> {{ postDate | date :'medium' }} </span></em>
+	
+		<br/>
+		<p style="margin-left: 10px;">  {{ postDescription }} </p>
+	</div>
+
+ 	<div>
+ 		<button class="btn btn-success" (click)="like()">Love it: {{ postLike }}</button>
+		 <button class="btn btn-danger"(click)="disLike()">Don't love it: {{ postDisLike }}</button>
+		 <button class="btn btn-default pull-right" (click)="onDelete()" > Supprimer</button>
+ 	</div>
+</li>
